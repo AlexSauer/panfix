@@ -1,0 +1,28 @@
+name: panfix
+display_name: napari PanFix
+contributions:
+  commands:
+    - id: panfix.make_sample_data
+      python_name: panfix._sample_data:make_sample_data
+      title: Load sample data from napari PanFix
+    - id: panfix.make_qwidget
+      python_name: panfix._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: panfix.make_magic_widget
+      python_name: panfix._widget:example_magic_widget
+      title: Make example magic widget
+    - id: panfix.make_func_widget
+      python_name: panfix._widget:example_function_widget
+      title: Make example function widget
+  sample_data:
+    - command: panfix.make_sample_data
+      display_name: napari PanFix
+      key: unique_id.1
+  widgets:
+    - command: panfix.make_qwidget
+      display_name: Example QWidget
+    - command: panfix.make_magic_widget
+      display_name: Example Magic Widget
+    - command: panfix.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
